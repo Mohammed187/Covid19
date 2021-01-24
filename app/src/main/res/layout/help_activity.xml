@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.example.covid19.help.ContactsListViewModel" />
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="?attr/colorPrimary"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark"
+            app:title="@string/get_help" />
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/toolbar3">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_46"
+                    android:fontFamily="@font/roboto_slab_bold"
+                    android:padding="@dimen/dimen_8"
+                    android:text="@string/emergency_contacts"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/contacts_recycler_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:orientation="horizontal"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    app:listData="@{viewModel.contactsLiveData}"
+                    tools:listitem="@layout/contacts_item" />
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_46"
+                    android:fontFamily="@font/roboto_slab_bold"
+                    android:padding="@dimen/dimen_8"
+                    android:text="@string/specialized_hospitals"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/hospital_recycler_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:orientation="horizontal"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    app:listData="@{viewModel.hospitalsLiveData}"
+                    tools:listitem="@layout/contacts_item" />
+
+                <TextView
+                    android:id="@+id/textView16"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_46"
+                    android:fontFamily="@font/roboto_slab_bold"
+                    android:padding="@dimen/dimen_8"
+                    android:text="@string/get_help"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+                <RadioButton
+                    android:id="@+id/radioButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:fontFamily="@font/roboto_slab_light"
+                    android:text="@string/for_myself"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+                <TextView
+                    android:id="@+id/textView18"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_slab_light"
+                    android:padding="@dimen/dimen_8"
+                    android:text="@string/are_you_having_symptoms"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <Button
+                        android:id="@+id/button3"
+                        style="?android:attr/buttonBarButtonStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/dimen_8"
+                        android:layout_weight="1"
+                        android:text="@string/yes" />
+
+                    <Button
+                        android:id="@+id/button4"
+                        style="?android:attr/background"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/dimen_8"
+                        android:layout_weight="1"
+                        android:background="@color/primaryColor"
+                        android:selectAllOnFocus="true"
+                        android:text="@string/no" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textView19"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_slab_light"
+                    android:padding="@dimen/dimen_8"
+                    android:text="@string/have_you_tested_for_corona_virus"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <Button
+                        android:id="@+id/button7"
+                        style="?android:attr/buttonBarButtonStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/dimen_8"
+                        android:layout_weight="1"
+                        android:text="@string/yes" />
+
+                    <Button
+                        android:id="@+id/button6"
+                        style="?android:attr/background"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/dimen_8"
+                        android:layout_weight="1"
+                        android:background="@color/primaryColor"
+                        android:text="@string/no" />
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/comments_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_8"
+                    android:layout_marginBottom="@dimen/dimen_8"
+                    android:autofillHints="@string/none"
+                    android:gravity="start|top"
+                    android:hint="@string/comments"
+                    android:inputType="textMultiLine"
+                    android:lines="4"
+                    android:maxLines="4"
+                    android:padding="@dimen/dimen_8" />
+
+                <Button
+                    android:id="@+id/button5"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/btn_shape"
+                    android:onClick="close"
+                    android:text="@string/submit" />
+
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+    </RelativeLayout>
+</layout>

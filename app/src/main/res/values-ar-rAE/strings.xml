@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">كوفيد 19</string>
+    <string name="emergency_contacts">الطوارئ</string>
+    <string name="help">المساعده</string>
+    <string name="deaths">الوفيات</string>
+    <string name="active">مصابين حاليا</string>
+    <string name="recovered">تم شفاؤهم</string>
+    <string name="confirmed">عدد الحالات</string>
+    <string name="uae_today">الإمارات اليوم</string>
+    <string name="infected_cases">الحالات المصابة</string>
+    <string name="world_today">العالم اليوم</string>
+    <string name="specialized_hospitals">المستشفيات المتخصصة</string>
+    <string name="comments">تعليقات</string>
+    <string name="submit">تاكيد</string>
+    <string name="yes">نعم</string>
+    <string name="no">لا</string>
+    <string name="have_you_tested_for_corona_virus">هل أجريت أختبار كورونا ؟</string>
+    <string name="are_you_having_symptoms">هل لديك أعراض؟</string>
+    <string name="for_myself">لنفسي</string>
+    <string name="get_help">أحتاج المساعده</string>
+    <string name="none">لايوجد</string>
+    <string name="success_application">تم تقديم طلبك بنجاح.</string>
+    <string name="settings">الإعدادات</string>
+    <string name="title_activity_settings">الاعدادات</string>
+    <string name="ui">الواجهه</string>
+    <string name="dark_mode">مود الظلام</string>
+    <string name="ambulance">الإسعاف</string>
+    <string name="dubai_police">الشرطة</string>
+    <string name="saudi_german_hostpital">مستشفي السعودي الالماني</string>
+    <string name="mediclinic_hostpital">مستشفى ميديكلينيك بارك فيو</string>
+    <string name="rashid_hospital">مستشفي راشد</string>
+    <string name="dark_mode_enabled">ثم تفعيل مود الظلام.</string>
+    <string name="dark_mode_disabled">تم عطيل مود الظلام.</string>
+    <string name="dha">هيئة الصحة بدبي</string>
+    <string name="send_feedback">أرسل رأيك</string>
+    <string name="feedback_summary">الإبلاغ عن مشاكل فنية أو اقتراح ميزات جديدة</string>
+    <string name="dark_mode_summary">انقر للتشغيل أو الإيقاف</string>
+</resources>
